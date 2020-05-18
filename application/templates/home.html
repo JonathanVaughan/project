@@ -1,6 +1,18 @@
 {% extends "layout.html" %}
 {% block body_content %}
-		{{ title }}
-
-		{{ posts[0] }}
+<p>Papa Jon's Pizza</p>
+{% for order in orders %}
+	<div>
+		<h3>{{ order.title }}</h3>
+		<p><b> - First name:</b>{{ order.first_name }}</p>
+		<p><b> - Last name:</b>{{ order.last_name }}</p>
+		<p><b> - Phone Number:</b>{{ order.number }}</p>
+		<p><b> - Address:</b>{{ order.address }}</p>
+		<p><b> - Pizza:</b>{{ order.pizza }}</p>
+		<p><b> - Quantity:</b>{{ order.quantity }}</p>
+		
+	</div>
+{% endfor %}
+	
 {% endblock %}
+
