@@ -8,13 +8,12 @@ class Orders(db.Model):
 	number = db.Column(db.String(30), nullable=False)
 	address = db.Column(db.String(100), nullable=False)
 	pizzaid = db.Column(db.Integer, db.ForeignKey('stock.pizzaid')) # should this be stock
-	quantity = db.Column(db.Integer, nullable=False) ####### integer
+	order_quantity = db.Column(db.Integer, nullable=False) ####### integer
 	price = db.Column(db.Integer, nullable=False) ######## times by price per pizza
 
 class Stock(db.Model):
 	pizzaid = db.Column(db.Integer, primary_key=True)
-	pizza = db.Column(db.String(100), nullable=False, unique=True)####unique?
-	quantity = db.Column(db.Integer, nullable=False) ###########)
+	stock_quantity = db.Column(db.Integer, nullable=False) ###########)
 	priceperpizza = db.Column(db.Integer, nullable=False)
 	orders = db.relationship('Orders', backref='pizza', lazy=True)
 

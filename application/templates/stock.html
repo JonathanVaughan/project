@@ -3,17 +3,21 @@
 <div class='form'>
 	<form method='POST' action=''>
 	{{ form.hidden_tag() }}
-        {{ form.title.label }}
-        {{ form.title }}
-	{% if form.title.errors %}
-		{% for error in form.title.errors %}
+        {{ form.pizzaid.label }}
+        {{ form.pizzaid }}
+	{% if form.pizzaid.errors %}
+		{% for error in form.pizzaid.errors %}
 		{{ error }}
 		{% endfor %}
 	{% endif %}
         <br>
-        {{ form.content.label }}
-        {{ form.content }}
-	
+        {{ form.stock_quantity.label }}
+        {{ form.stock_quantity }}
+	{% if form.stock_quantity.errors %}
+		{% for error in form.stock_quantity.errors %}
+		{{ error }}
+		{% endfor %}
+	{% endif %}
         <br>
         {{ form.submit }}
         </form>
