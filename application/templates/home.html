@@ -10,12 +10,19 @@
 		<p><b> - Address:</b>{{ order.address }}</p>
 		<p><b> - Pizza:</b>{{ order.pizzaid }}</p>
 		<p><b> - Quantity:</b>{{ order.order_quantity }}</p>
-		<p><b> - Delivered:</b>{{ order.order_quantity }}</p>
+		<p><b> - Delivered:</b>{{ order.orderstatus }}</p>
 	
-	<form action="\orderstatus\{{ order.orderid }}">
+	
+	<form action="{{ url_for('updateorder', id=order.orderid) }}">
 		<button type="submit">Delivered</button>
-	</form>	
+	</form>
+	<form action="\updateorder\{{ order.orderid }}\delete">
+		<button type="submit">Delete</button>
+	</form>
 	</div>
+
+	
+	
 {% endfor %}
 	
 {% endblock %}

@@ -1,7 +1,7 @@
 from flask import render_template, redirect, url_for, request
 from application import app, db
 from application.models import Orders, Stock
-from application.forms import OrderForm, StockForm
+from application.forms import OrderForm, StockForm, updateorderform
 
 
 @app.route('/')
@@ -47,10 +47,20 @@ def stock():
 		return redirect(url_for('home'))
 	return render_template('stock.html', title='stock', form=form)
 	
-@app.route('/orderstatus/<id>', methods=['GET', 'POST'])
+@app.route('/updateorder/<id>/', methods=['GET', 'POST'])
 def updateorder(id):
+	print("hello")
 	form = updateorderform()
-	orderstatus = orders.query.filter_by(orderid=id).first()
+	orderstatus = Orders.query.filter_by(orderid=id).first()
 	if form.validate_on_submit():
-		print("success")
+		orderstatus.orderstatus = form.orderstatus.data
+		db.session.commit()
+		return redirect(url_for('home'))
+	return render_template('orderstatus.html', title='orderstatus', form=form)
 
+@app.route('/updateorder/<id>/delete', methods=['GET', 'POST'])
+def deleteorder(id):
+	delorder = Orders.query.filter_by(orderid=id).first()
+	db.session.delete(delorder)
+	db.session.commit()
+	return redirect(url_for('home'))

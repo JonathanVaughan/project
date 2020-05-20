@@ -1,6 +1,7 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, BooleanField, validators, IntegerField
 from wtforms.validators import DataRequired
+from application.models import Orders 
 
 class OrderForm(FlaskForm):
         first_name = StringField('First Name',validators=[DataRequired()])
@@ -55,9 +56,10 @@ class StockForm(FlaskForm):
 #                ])
 #        submitf = SubmitField('Add Stock')
 class updateorderform(FlaskForm):
-        orderstatus = StringField('order', [validators.DataRequired()], [validators.Length(min=2, max=3)])
+        orderstatus = StringField('order', [validators.DataRequired()])
         submit = SubmitField('Delivered')
-
+def order_query():
+        return Orders.query
 
 
 

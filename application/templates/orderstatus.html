@@ -9,8 +9,10 @@
 		{% for error in form.orderstatus.errors %}
 		{{ error }}
 		{% endfor %}
-    {% endif %}
-    <br>
-    {{ form.submit }}
-    </form>
+        {% endif %}
+        <br>
+        {{ form.submit }}
+        </form>
 </div>
+
+{% endblock %}
