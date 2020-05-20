@@ -1,1 +1,10 @@
 #!/ur/bin/env bash
+
+[Unit]
+Description=Project jenkins
+[Service]
+User=jenkins
+ExecStart=/var/lib/jenkins/workspace/example_freestyle/script/installation.sh
+
+[Install]
+WantedBy=multi-user.target
