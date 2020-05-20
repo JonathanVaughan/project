@@ -4,7 +4,6 @@ from application.models import Orders, Stock
 from application.forms import OrderForm, StockForm
 
 
-
 @app.route('/')
 @app.route('/home')
 def home():
@@ -15,17 +14,17 @@ def home():
 def about():
 	return render_template('about.html', title='about')
 
-@app.route('/orders', methods=['GET', 'POST'])
+@app.route('/order', methods=['GET', 'POST'])
 def order():	
 	form = OrderForm()
 	if request.method == 'POST':
 		if form.validate_on_submit():
 			orderData = Orders(
-				first_name=request.form['first_name'],#form.first_name.data,
+				first_name=form.first_name.data,
 				last_name=form.last_name.data,
 				number=form.number.data,
 				address=form.address.data,
-				pizza=form.pizza.data,
+				pizzaid=form.pizzaid.data,
 				order_quantity=form.order_quantity.data
 			)
 			
@@ -40,7 +39,7 @@ def stock():
 	form = StockForm()
 	if form.validate_on_submit():
 		stockData = Stock(
-			pizza=form.pizza.data,
+			pizzaid=form.pizzaid.data,
 			stock_quantity=form.stock_quantity.data
 		)
 		db.session.add(stockData)
@@ -48,3 +47,10 @@ def stock():
 		return redirect(url_for('home'))
 	return render_template('stock.html', title='stock', form=form)
 	
+@app.route('/orderstatus/<id>', methods=['GET', 'POST'])
+def updateorder(id):
+	form = updateorderform()
+	orderstatus = orders.query.filter_by(orderid=id).first()
+	if form.validate_on_submit():
+		print("success")
+

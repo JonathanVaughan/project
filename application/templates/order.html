@@ -1,7 +1,7 @@
 {% extends "layout.html" %}
 {% block body_content %}
 <div class='form'>
-	<form id="order_form" method='POST' action='/orders'>
+	<form method='POST' action=''>
 	{{ form.hidden_tag() }}
         {{ form.first_name.label }}
         {{ form.first_name }}
@@ -35,14 +35,14 @@
 		{% endfor %}
         {% endif %}
         <br>
-        {{ form.pizza.label }}
-        {{ form.pizza }}
-	{% if form.pizza.errors %}
-		{% for error in form.pizza.errors %}
+        {{ form.pizzaid.label }}
+        {{ form.pizzaid }}
+	{% if form.pizzaid.errors %}
+		{% for error in form.pizzaid.errors %}
 		{{ error }}
 		{% endfor %}
         {% endif %}
-        <br>
+		<br>
         {{ form.order_quantity.label }}
         {{ form.order_quantity }}
 	{% if form.order_quantity.errors %}

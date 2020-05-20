@@ -7,13 +7,16 @@ class Orders(db.Model):
 	last_name = db.Column(db.String(30), nullable=False)
 	number = db.Column(db.String(30), nullable=False)
 	address = db.Column(db.String(100), nullable=False)
-	pizzaid = db.Column(db.Integer, db.ForeignKey('stock.pizzaid')) # should this be stock
+	pizzaid = db.Column(db.Integer, nullable=False) #db.ForeignKey('stock.pizzaid')) # should this be stock
 	order_quantity = db.Column(db.Integer, nullable=False) ####### integer
-	price = db.Column(db.Integer, nullable=False) ######## times by price per pizza
+	price = db.Column(db.Integer, nullable=True) ######## times by price per pizza
+	orderstatus = db.Column(db.String(5), nullable=True) 
+	
+	
 
 class Stock(db.Model):
 	pizzaid = db.Column(db.Integer, primary_key=True)
 	stock_quantity = db.Column(db.Integer, nullable=False) ###########)
 	priceperpizza = db.Column(db.Integer, nullable=False)
-	orders = db.relationship('Orders', backref='pizza', lazy=True)
+	#orders = db.relationship('Orders', backref='pizza', lazy=True)
 
