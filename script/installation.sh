@@ -8,8 +8,6 @@ sudo apt install python3-pip -y
 
 sudo apt install python3-venv -y
 
-echo "Testing Webhook"
-
 python3 -m venv venv
 
 source /var/lib/jenkins/workspace/example_freestyle/venv/bin/activate

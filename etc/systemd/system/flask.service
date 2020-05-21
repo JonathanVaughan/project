@@ -1,5 +1,3 @@
-#!/ur/bin/env bash
-
 [Unit]
 Description=Project jenkins
 [Service]
