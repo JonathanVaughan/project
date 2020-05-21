@@ -8,11 +8,17 @@ from application.forms import OrderForm, StockForm, updateorderform
 @app.route('/home')
 def home():
 	OrderData = Orders.query.all()
+	Stockdata = Stock.query.all()
 	return render_template('home.html', title="Home Page", orders=OrderData)
 
 @app.route('/about')
 def about():
 	return render_template('about.html', title='about')
+
+@app.route('/menu')
+def menu():
+	StockData = Stock.query.all()
+	return render_template('menu.html', title="Home Page", stocks=StockData)
 
 @app.route('/order', methods=['GET', 'POST'])
 def order():	
@@ -37,14 +43,14 @@ def order():
 @app.route('/stock', methods=['GET', 'POST'])
 def stock():
 	form = StockForm()
-	if form.validate_on_submit():
-		stockData = Stock(
-			pizzaid=form.pizzaid.data,
-			stock_quantity=form.stock_quantity.data
-		)
-		db.session.add(stockData)
-		db.session.commit()
-		return redirect(url_for('home'))
+	if request.method == 'POST':
+		if form.validate_on_submit():
+			stockData = Stock(
+				pizza_name=form.pizza_name.data
+			)
+			db.session.add(stockData)
+			db.session.commit()
+			return redirect(url_for('home'))
 	return render_template('stock.html', title='stock', form=form)
 	
 @app.route('/updateorder/<id>/', methods=['GET', 'POST'])
@@ -64,3 +70,5 @@ def deleteorder(id):
 	db.session.delete(delorder)
 	db.session.commit()
 	return redirect(url_for('home'))
+
+

@@ -42,8 +42,7 @@ class OrderForm(FlaskForm):
 	# 	])
 
 class StockForm(FlaskForm):
-        pizzaid = StringField('Pizza', [validators.DataRequired()], [validators.Length(min=2, max=30)])
-        stock_quantity = StringField('Quantity', [validators.DataRequired()], [validators.Length(min=2, max=30)])
+        pizza_name = StringField('Name', validators=[DataRequired()])
         submit = SubmitField('Add')
         #pizzaid = StringField('Pizza',
          #       validators=[

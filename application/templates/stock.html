@@ -3,18 +3,10 @@
 <div class='form'>
 	<form method='POST' action=''>
 	{{ form.hidden_tag() }}
-        {{ form.pizzaid.label }}
-        {{ form.pizzaid }}
-	{% if form.pizzaid.errors %}
-		{% for error in form.pizzaid.errors %}
-		{{ error }}
-		{% endfor %}
-	{% endif %}
-        <br>
-        {{ form.stock_quantity.label }}
-        {{ form.stock_quantity }}
-	{% if form.stock_quantity.errors %}
-		{% for error in form.stock_quantity.errors %}
+        {{ form.pizza_name.label }}
+        {{ form.pizza_name }}
+	{% if form.pizza_name.errors %}
+		{% for error in form.pizza_name.errors %}
 		{{ error }}
 		{% endfor %}
 	{% endif %}
