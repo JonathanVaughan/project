@@ -57,8 +57,8 @@ class StockForm(FlaskForm):
 class updateorderform(FlaskForm):
         orderstatus = StringField('order', [validators.DataRequired()])
         submit = SubmitField('Delivered')
-def order_query():
-        return Orders.query
+#def order_query():
+ #       return Orders.query
 
 
 

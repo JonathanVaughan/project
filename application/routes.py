@@ -61,7 +61,7 @@ def updateorder(id):
 	if form.validate_on_submit():
 		orderstatus.orderstatus = form.orderstatus.data
 		db.session.commit()
-		return redirect(url_for('home'))
+		return redirect(url_for('menu'))
 	return render_template('orderstatus.html', title='orderstatus', form=form)
 
 @app.route('/updateorder/<id>/delete', methods=['GET', 'POST'])

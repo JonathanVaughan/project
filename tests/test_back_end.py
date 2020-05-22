@@ -29,6 +29,36 @@ class TestBase(TestCase):
         db.drop_all()
         db.create_all()
 
+        addStock = Stock(
+            pizza_name="Test Pizza"
+        )
+
+        addOrder = Orders(
+            first_name="Ordero",
+            last_name="lastorder",
+            number="987654321",
+            address="61 Zoo Lane",
+            pizzaid="1",
+            order_quantity="2"  
+        )
+        
+        addOrder2 = Orders(
+            first_name="Orderino",
+            last_name="lastorderio",
+            number="9876543212",
+            address="66 Zoo Lane",
+            pizzaid="1",
+            order_quantity="2"  
+        )
+        db.session.add(addOrder)
+        db.session.add(addOrder2)
+        db.session.add(addStock)
+        db.session.commit()
+
+
+
+
+
     def tearDown(self):
         """
         Will be called after every test
@@ -57,9 +87,9 @@ class TestViews(TestBase):
         response = self.client.get(url_for('order'))
         self.assertEqual(response.status_code, 200)
 
-    def test_orderstatus_view(self):
-        response = self.client.get(url_for('orderstatus'))
-        self.assertEqual(response.status_code, 200)
+#    def test_orderstatus_view(self):
+#        response = self.client.get(url_for('orderstatus'))
+#        self.assertEqual(response.status_code, 200)
     
     def test_stock_view(self):
         response = self.client.get(url_for('stock'))
@@ -86,3 +116,44 @@ class TestPosts(TestBase):
                 follow_redirects=True
             )
             self.assertIn(b'Testy', response.data)
+
+    def test_add_new_menu(self):
+        with self.client:
+            response = self.client.post(
+                '/stock',
+                data=dict(
+                    pizza_name="Test Pizza"
+                ),
+                follow_redirects=True
+            )
+            self.assertIn(b'Test Pizza', response.data)
+
+class TestRoutes(TestBase):
+    def test_update(self):
+        with self.client:
+            response = self.client.post(
+                '/updateorder/1/',
+                data=dict(
+                    orderstatus="Yes"
+                ),
+                follow_redirects=True
+            )
+            self.assertIn(b'Yes', response.data)
+
+    def test_delete(self):
+        with self.client:
+            response = self.client.post(
+                '/updateorder/1/delete',
+                follow_redirects=True
+            )
+            count = Orders.query.count()
+            self.assertEqual(count, 1)
+
+class TestTickets(TestBase):
+    def test_order_ticket(self):
+        response = self.client.get(url_for('menu'))
+        self.assertIn(b'Test Pizza', response.data)
+#    def test_order_ticket(self):
+
+#        with self.client:
+#            self.assertIn(b'Ordero', '/home')
