@@ -104,7 +104,7 @@ class TestPosts(TestBase):
         """
         with self.client:
             response = self.client.post(
-                '/order',
+                url_for('order'),
                 data=dict(
                     first_name="Testy",
                     last_name="Testerson",
@@ -120,7 +120,7 @@ class TestPosts(TestBase):
     def test_add_new_menu(self):
         with self.client:
             response = self.client.post(
-                '/stock',
+                url_for('stock'),
                 data=dict(
                     pizza_name="Test Pizza"
                 ),
@@ -132,7 +132,7 @@ class TestRoutes(TestBase):
     def test_update(self):
         with self.client:
             response = self.client.post(
-                '/updateorder/1/',
+                url_for('updateorder',id=1),
                 data=dict(
                     orderstatus="Yes"
                 ),
