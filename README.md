@@ -50,7 +50,7 @@ Shown below is my risk assesment
 ## Design
 Shown below is each page of my website given more time i would like to focus more on the styling and layout of the website.
 ### Home Page
-Shown below is my home page this page is setup to display placed orders with entered information. It also allows the delivery status to be updated and the order to be deleted.
+Shown below is my home page this page is setup to display placed orders with entered information. It also allows the delivery status to be updated and the order to be deleted.  
 ![](Documents/Home.PNG)
 ### Stock Page
 This page allows the user to add new pizza to the menu page and automatically have a menu item number assigned
@@ -96,6 +96,11 @@ Pytest was used for testing
 The results for testing  
 ![](Documents/Testing.PNG)   
 As you can see i managed to get 100% coverage for testing on every file other than my routes due to time constraints I was unable to resolve the issue with testing coverage. I have written the code to test the update and delete function but for some reason i am unable to get the coverage to be counted for them this is something I would like to resolve given the time.
+Update testing:
+![](Documents/testUpdate.PNG)
+Delete testing:
+![](Documents/testDelete.PNG)
+
 Due to time constraints i was unable to implement Selenium for integrated testing
 
 ## Improvements for future
@@ -106,6 +111,8 @@ At the moment there is no price displayed for the pizza ordered and how many of 
 I would also like to implement a dropdown menu that displays all pizzas in the menu and automatically fill the id section for the pizza chosen in the dropdown rather than customers having to go to the menu page look for the pizza item number they want and inserting it into the order.
 
 The overall design of the website has not been worked on given more time i would focus on creating a logo and the general layout of the page adding colours and generally just a more clean and proffesional layout
+
+Implement Integrated Testing using selenium
 
 
 ## Author
