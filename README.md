@@ -19,7 +19,7 @@ I used Trello to track my project (shown below)
 #### Before Completion
 ![](Documents/TrelloBoard.PNG)
 #### After Completion
-
+![](Documents/Trello2.PNG)
 
 
 ## ERD
