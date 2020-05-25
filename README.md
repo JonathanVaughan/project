@@ -38,6 +38,14 @@ Screenshots of project
 This Diagram shows how I setup my application  to automate software delivery process.
 
 #### Technologies Used
+* Trello: for project tracking
+* Github: Version Control System, and Jenkins WebHook
+* Google Cloud Platform: Virtual Machine for application and SQL Database
+* Mysql: Allows creation of SQL Databases and Tables
+* Jenkins: Continuous Integration Server builds application after every push to github
+* PyTest: Tests code functions and offers coverage to see how much is tested
+* Gunicorn: WSGI to run python web app
+
 
 ## Testing
 Pytest was used for testing 
