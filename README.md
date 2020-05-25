@@ -27,7 +27,7 @@ For my project I chose to make a Pizza Delivery application that would allow the
 
 
 ## Project Tracking
-To track the development of my progress I used a Kanban Trello Board, using this helped me track each stage of my project and see which sections i had completed or still needed working on improving my overall efficiency and not spending time trying to workout where i left off yesterday.
+To track the development of my progress I used a Kanban Trello Board, using this helped me track each stage of my project and see which sections i had completed or still needed working on improving my overall efficiency and not spending time trying to workout where I left off yesterday.
 In the Trello Board I added a section for user storys under project tracking
 #### Before Completion
 ![](Documents/TrelloBoard.PNG)
@@ -39,18 +39,18 @@ In the Trello Board I added a section for user storys under project tracking
 This was my first draft of my ERD which shows the relationships and the cloumns of my SQL database. The original plan was to have it setup so that the Stock table would have a quantity with the number of pizzas in stock which would display a message if there was no stock remaining and a price per pizza function which would display the total cost of the order 
 based on how many of that particular pizza was placed in the Orders section.
 ![](Documents/erd1.png)
-During development my entity relationship diagram changed due to time constraints some of the features I talked about above i was unable to implement so changes to models had to be made and adapted so the project could be completed in time. (Current version of ERD displayed below)
+During development my entity relationship diagram changed due to time constraints some of the features I talked about above I was unable to implement so changes to models had to be made and adapted so the project could be completed in time. (Current version of ERD displayed below)
 ![](Documents/erd2.png)
 
 ## Risk Assesment
-In my risk assesment I identified some potential risks for the creation of my project and likeliness of this happening as you can see below i ranked the impact of that risk from 1 being slightly problematic and 3 being a very problematic risk, and the likelihood of that risk occuring from 1 being unlikely and 3 being very likely.  
+In my risk assesment I identified some potential risks for the creation of my project and likeliness of this happening as you can see below I ranked the impact of that risk from 1 being slightly problematic and 3 being a very problematic risk, and the likelihood of that risk occuring from 1 being unlikely and 3 being very likely.  
 Shown below is my risk assesment
 ![](Documents/Riskassesment.PNG)
 #### Revisited Risk Assesment  
 ![](Documents/UpdatedRisk.PNG)
 
 ## Design
-Shown below is each page of my website given more time i would like to focus more on the styling and layout of the website.
+Shown below is each page of my website given more time I would like to focus more on the styling and layout of the website.
 ### Home Page
 Shown below is my home page this page is setup to display placed orders with entered information. It also allows the delivery status to be updated and the order to be deleted.  
 ![](Documents/Home.PNG)
@@ -104,12 +104,12 @@ Update testing:
 Delete testing:  
 ![](Documents/testDelete.PNG)
 
-Due to time constraints i was unable to implement Selenium for integrated testing
+Due to time constraints I was unable to implement Selenium for integrated testing
 
 ## Improvements for future
-During the development process of my project there were many ideas / features that i wanted to implement but was unable due to time constraints.
+During the development process of my project there were many ideas / features that I wanted to implement but was unable due to time constraints.
 
-At the moment there is no price displayed for the pizza ordered quantity, given more time i would like to implement a feature that takes the specific pizza price from the stock table and multiplys it by the quantity ordered of that pizza
+At the moment there is no price displayed for the pizza ordered quantity, given more time I would like to implement a feature that takes the specific pizza price from the stock table and multiplys it by the quantity ordered of that pizza
 
 I would also like to implement a dropdown menu that displays all pizzas in the menu and automatically fill the id section for the pizza chosen in the dropdown rather than customers having to go to the menu page look for the pizza item number they want and inserting it into the order.
 
