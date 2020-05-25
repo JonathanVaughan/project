@@ -50,6 +50,7 @@ Shown below is my risk assesment
 Shown below is each page of my website given more time i would like to focus more on the styling and layout of the website.
 #### Home Page
 Shown below is my home page this page is setup to display placed orders with entered information. It also allows the delivery status to be updated and the order to be deleted
+
 ![](Documents/Home.PNG)
 #### Stock Page
 This page allows the user to add new pizza to the menu page and automatically have a menu item number assigned
