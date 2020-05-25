@@ -46,10 +46,7 @@ In my risk assesment I identified some potential risks for the creation of my pr
 Shown below is my risk assesment
 ![](Documents/Riskassesment.PNG)
 
-## Design
-Shown below is each page of my website given more time i would like to focus more on the styling and layout of the website.
-#### Home Page
-Shown below is my home page this page is setup to display placed orders with entered information. It also allows the delivery status to be updated and the order to be deleted 
+
 #### Stock Page
 This page allows the user to add new pizza to the menu page and automatically have a menu item number assigned
 ![](Documents/stock.PNG)
