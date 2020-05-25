@@ -96,10 +96,10 @@ Pytest was used for testing
 The results for testing  
 ![](Documents/Testing.PNG)   
 As you can see i managed to get 100% coverage for testing on every file other than my routes due to time constraints I was unable to resolve the issue with testing coverage. I have written the code to test the update and delete function but for some reason i am unable to get the coverage to be counted for them this is something I would like to resolve given the time.  
-Update testing:
+Update testing:  
 ![](Documents/testUpdate.PNG)  
 
-Delete testing:
+Delete testing:  
 ![](Documents/testDelete.PNG)
 
 Due to time constraints i was unable to implement Selenium for integrated testing
