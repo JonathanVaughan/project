@@ -10,7 +10,17 @@
 * Improvements for future 
 
 ### Introduction
-The aim for this project was to create a fully functioning CRUD apllication with utilisation of supporting tools, methodologies and technologies that encapsulate all core modules covered during training.
+The aim for this project was to create a fully functioning CRUD apllication with utilisation of supporting tools, methodologies and technologies that encapsulate all core modules covered during training more specifically:
+* Project Management
+* Python Fundamentals
+* Python Testing
+* Git
+* Basic Linux
+* Python Web Development
+* Continuous Integration
+* Cloud Fundamentals
+* Databases
+
 For my project I chose to make a Pizza Delivery application that would allow the user to enter there details and order a pizza. There is 2 SQL tables one of them contains the Stock, the purpose of this table is to match the entered pizzaid and display the name of that pizza. The other table is the Orders table, the purpose of this table is to take in the customers details and what pizza number they would like to then display there order on the home page.
 
 
@@ -23,7 +33,7 @@ To track the development of my progress I used a kanban Trello Board, using a th
 
 
 ## ERD
-This was my first draft of my ERD which shows  the relationships and the cloumns of my SQL database
+This was my first draft of my ERD which shows the relationships and the cloumns of my SQL database
 ![](Documents/erd1.png)
 During development my entity relationship diagram changed due to time constraints some of the features I initially wanted i was unable to complete.
 ![](Documents/erd2.png)
