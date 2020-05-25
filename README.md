@@ -17,7 +17,7 @@ For my project I chose to make a Pizza Delivery application that would allow a u
 ## Project Tracking
 I used Trello to track my project (shown below)
 #### Before Completion
-![](Documents/Trello Board.png)
+![](Documents/TrelloBoard.png)
 #### After Completion
 
 
@@ -29,7 +29,7 @@ During development my entity relationship diagram changed due to time constraint
 ![](Documents/erd2.png)
 ## Risk Assesment
 Shown below is my initial draft for the risk assesment 
-![](Documents/Risk assesment.png)
+![](Documents/Riskassesment.png)
 
 ## Design
 Screenshots of project
