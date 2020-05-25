@@ -115,6 +115,10 @@ The overall design of the website has not been worked on given more time i would
 
 Implement Integrated Testing using selenium
 
+Add a login function for admins and users
+
+Get testing to 100% coverage
+
 
 ## Author
 __Jonathan Vaughan__
