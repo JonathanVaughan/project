@@ -84,8 +84,7 @@ This Diagram is my CI pipeline which shows how I setup my application  to automa
 
 ## Testing
 Pytest was used for testing
-The results for testing:
-
+The results for testing 
 ![](Documents/Testing.PNG)
 
 Due to time constraints i was unable to implement Selenium for integrated testing
