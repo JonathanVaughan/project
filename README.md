@@ -45,6 +45,7 @@ During development my entity relationship diagram changed due to time constraint
 In my risk assesment I identified some potential risks for the creation of my project and likeliness of this happening as you can see below i ranked the impact of that risk from 1 being slightly problematic and 3 being a very problematic risk, and the likelihood of that risk occuring from 1 being unlikely and 3 being very likely.
 Shown below is my risk assesment
 ![](Documents/Riskassesment.PNG)
+#### Revisited Risk Assesment (if time left)
 
 ## Design
 Shown below is each page of my website given more time i would like to focus more on the styling and layout of the website.
@@ -80,14 +81,23 @@ This Diagram is my CI pipeline which shows how I setup my application  to automa
 * Jenkins: Continuous Integration Server builds application after every push to github
 * PyTest: Tests code functions and offers coverage to see how much is tested
 * Gunicorn: WSGI to run python web app
+* Visual Studio Code
+
+#### Languages Used
+* Python3
+* CSS
+* HTML
+* Flask
+* Jinja2
 
 
 ## Testing
 Pytest was used for testing  
 The results for testing  
-![](Documents/Testing.PNG)
+![](Documents/Testing.PNG)   
 As you can see i managed to get 100% coverage for testing on every file other than my routes due to time constraints I was unable to resolve the issue with testing coverage. I have written the code to test the update and delete function but for some reason i am unable to get the coverage to be counted for them this is something I would like to resolve given the time.
 Due to time constraints i was unable to implement Selenium for integrated testing
+
 ## Improvements for future
 During the development process of my project there was many ideas / features that i wanted to implement but was unable due to time constraints.
 
