@@ -49,22 +49,22 @@ Shown below is my risk assesment
 
 ## Design
 Shown below is each page of my website given more time i would like to focus more on the styling and layout of the website.
-#### Home Page
+### Home Page
 Shown below is my home page this page is setup to display placed orders with entered information. It also allows the delivery status to be updated and the order to be deleted.
 ![](Documents/Home.PNG)
-#### Stock Page
+### Stock Page
 This page allows the user to add new pizza to the menu page and automatically have a menu item number assigned
 ![](Documents/stock.PNG)
-#### About Page
+### About Page
 This is my about page where the owner could talk about the history of the pizza place and fill it with more information
 ![](Documents/about.PNG)
-#### Menu
+### Menu
 This page displays menu items added in from the stock page and shows the assigned menu order number
 ![](Documents/menu.PNG)
-#### Order
+### Order
 This is where users place Orders which are then displayed on the home page
 ![](Documents/Orderee.PNG)
-#### Delivery Status
+### Delivery Status
 This page can only be acccessed from the home page and allows the delivery status for the paticular order to be edited.
 ![](Documents/updateorder.PNG)
 
@@ -73,7 +73,7 @@ This page can only be acccessed from the home page and allows the delivery statu
 This Diagram is my CI pipeline which shows how I setup my application  to automate software delivery process.
 ![](Documents/cipipeline.PNG)
 
-#### Technologies Used
+### Technologies Used
 * Trello: for project tracking
 * Github: Version Control System, and Jenkins WebHook
 * Google Cloud Platform: Virtual Machine for application and SQL Database
@@ -83,7 +83,7 @@ This Diagram is my CI pipeline which shows how I setup my application  to automa
 * Gunicorn: WSGI to run python web app
 * Visual Studio Code
 
-#### Languages Used
+### Languages Used
 * Python3
 * CSS
 * HTML
@@ -107,4 +107,34 @@ I would also like to implement a dropdown menu that displays all pizzas in the m
 
 The overall design of the website has not been worked on given more time i would focus on creating a logo and the general layout of the page adding colours and generally just a more clean and proffesional layout
 
+
+## Author
+__Jonathan Vaughan__
+
+## Acknowledgements
+* My fantastic trainers who have gave me knowledge and training needed for this project which i am very proud of
+* My good friends in group 4
+
+## License
+MIT License
+
+Copyright (c) 2020 JonathanVaughan
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
