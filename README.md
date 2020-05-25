@@ -16,9 +16,30 @@ For my project I chose to make a Pizza Delivery application that would allow a u
 
 ## Project Tracking
 I used Trello to track my project (shown below)
+#### Before Completion
+
+#### After Completion
+
 
 
 ## ERD
 This was my first draft of my ERD which shows  the relationships and the cloumns of my SQL database
-
+![](Documents/erd1.png)
 During development my entity relationship diagram changed due to time constraints some of the features I initially wanted i was unable to complete.
+![](Documents/erd2.png)
+## Risk Assesment
+Shown below is my initial draft for the risk assesment 
+
+## Design
+
+## Deployment
+This Diagram shows how I setup my application  to automate software delivery process.
+
+#### Technologies Used
+
+## Testing
+
+## Improvements for future
+
+
+
