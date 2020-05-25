@@ -32,13 +32,13 @@ For my project I chose to make a Pizza Delivery application that would allow the
 
 
 ## Project Tracking
-To track the development of my progress I used a Kanban Trello Board, using this helped me track each stage of my project and see which sections i had completed or still needed working on improving my overall efficiency and not spending time trying to workout where I left off yesterday.
-In the Trello Board I added a section for user storys under project tracking
+To track the development of my progress I used a Kanban Trello Board, using this helped me track each stage of my project and see which sections i had completed or still needed working on improving my overall efficiency and not spending time trying to workout where I left off yesterday.  
+In the Trello Board I added a section for user storys under project tracking these were requested for the project, I then broke them down and turned them into tasks for my board that could be completed.
 #### Before Completion
 ![](Documents/TrelloBoard.PNG)
 #### After Completion
-![](Documents/Trello2.PNG)
-
+![](Documents/Trello2.PNG)  
+As you can see i added a bug section to the trello board to track any bugs i had encountered during project development. Fortunately only 1 to my knowledge is still in the final version of the project and it is do to with testing so causes no harm to project functionality.
 
 ## ERD
 This was my first draft of my ERD which shows the relationships and the cloumns of my SQL database. The original plan was to have it setup so that the Stock table would have a quantity with the number of pizzas in stock which would display a message if there was no stock remaining and a price per pizza function which would display the total cost of the order 
