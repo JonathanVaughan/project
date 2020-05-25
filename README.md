@@ -90,8 +90,11 @@ The results for testing
 Due to time constraints i was unable to implement Selenium for integrated testing
 ## Improvements for future
 During the development process of my project there was many ideas / features that i wanted to implement but was unable due to time constraints.
+
 At the moment there is no price displayed for the pizza ordered and how many of them given more time i would like to implement a feature that takes the specific pizza price from the stock table and multiplys it by the quantity ordered of that pizza
+
 I would also like to implement a dropdown menu that displays all pizzas in the menu and automatically fill the id section for the pizza chosen in the dropdown rather than customers having to go to the menu page look for the pizza item number they want and inserting it into the order.
+
 The overall design of the website has not been worked on given more time i would focus on creating a logo and the general layout of the page adding colours and generally just a more clean and proffesional layout
 
 
