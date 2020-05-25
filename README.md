@@ -47,6 +47,7 @@ In my risk assesment I identified some potential risks for the creation of my pr
 Shown below is my risk assesment
 ![](Documents/Riskassesment.PNG)
 #### Revisited Risk Assesment  
+Once my project had been completed i went over risk assesment and added an update section. In this section I commented wether or not i had encountered that specific risk during my development  
 ![](Documents/UpdatedRisk.PNG)
 
 ## Design
