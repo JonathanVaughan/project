@@ -85,9 +85,10 @@ This Diagram is my CI pipeline which shows how I setup my application  to automa
 ## Testing
 Pytest was used for testing
 The results for testing:
+
 ![](Documents/Testing.PNG)
 
-Due to time constraints i was unable to implement 
+Due to time constraints i was unable to implement Selenium for integrated testing
 ## Improvements for future
 During the development process of my project there was many ideas / features that i wanted to implement but was unable due to time constraints.
 At the moment there is no price displayed for the pizza ordered and how many of them given more time i would like to implement a feature that takes the specific pizza price from the stock table and multiplys it by the quantity ordered of that pizza
