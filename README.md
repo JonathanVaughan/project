@@ -17,7 +17,7 @@ For my project I chose to make a Pizza Delivery application that would allow a u
 ## Project Tracking
 I used Trello to track my project (shown below)
 #### Before Completion
-
+![](Documents/Trello Board.png)
 #### After Completion
 
 
@@ -29,8 +29,10 @@ During development my entity relationship diagram changed due to time constraint
 ![](Documents/erd2.png)
 ## Risk Assesment
 Shown below is my initial draft for the risk assesment 
+![](Documents/Risk assesment.png)
 
 ## Design
+Screenshots of project
 
 ## Deployment
 This Diagram shows how I setup my application  to automate software delivery process.
@@ -38,7 +40,7 @@ This Diagram shows how I setup my application  to automate software delivery pro
 #### Technologies Used
 
 ## Testing
-
+Pytest was used for testing 
 ## Improvements for future
 
 
