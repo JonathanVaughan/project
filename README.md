@@ -2,13 +2,18 @@
 ## Papa Jon's Pizzaria
 
 * Introduction
+* Plan for Project
 * Project Tracking
 * Entity Relationship Diagram
 * Risk Assesment 
 * Design
 * Deployment
+* Technology Used
 * Testing
 * Improvements for future 
+* Author  
+* Acknowledgements
+* License
 
 ### Introduction
 The aim for this project was to create a fully functioning CRUD apllication with utilisation of supporting tools, methodologies and technologies that encapsulate all core modules covered during training more specifically:
@@ -47,7 +52,7 @@ In my risk assesment I identified some potential risks for the creation of my pr
 Shown below is my risk assesment
 ![](Documents/Riskassesment.PNG)
 #### Revisited Risk Assesment  
-Once my project had been completed i went over risk assesment and added an update section. In this section I commented wether or not i had encountered that specific risk during my development  
+Once my project had been completed I went over risk assesment and added an update section. In this section I commented wether or not i had encountered that specific risk during my development  
 ![](Documents/UpdatedRisk.PNG)
 
 ## Design
