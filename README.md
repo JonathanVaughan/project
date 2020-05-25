@@ -28,15 +28,27 @@ This was my first draft of my ERD which shows  the relationships and the cloumns
 During development my entity relationship diagram changed due to time constraints some of the features I initially wanted i was unable to complete.
 ![](Documents/erd2.png)
 ## Risk Assesment
-Shown below is my initial draft for the risk assesment 
+In my risk assesment I identified some potential risks for the creation of my project 
+Shown below is my initial draft for the risk assesment
 ![](Documents/Riskassesment.PNG)
 
 ## Design
 Screenshots of project
+#### Home Page
+![](Documents/Home.PNG)
+#### Stock Page
+![](Documents/stock.PNG)
+#### About Page
+![](Documents/about.PNG)
+#### Menu
+![](Documents/menu.PNG)
+#### Order
+![](Documents/Orderee.PNG)
+
 
 ## Deployment
 This Diagram shows how I setup my application  to automate software delivery process.
-
+ci pipeline here
 #### Technologies Used
 * Trello: for project tracking
 * Github: Version Control System, and Jenkins WebHook
