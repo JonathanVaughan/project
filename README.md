@@ -28,11 +28,11 @@ The aim for this project was to create a fully functioning CRUD apllication with
 * Databases
 
 ## Plan for Project
-For my project I chose to make a Pizza Delivery application that would allow the user to enter their details and order a pizza. There are 2 SQL tables one of them contains the Stock, the purpose of this table is to match the entered PizzaID and display the name of that pizza. The other table is the Orders table, the purpose of this table is to take in the customers details and what pizza number they would like to then display their order on the home page.
+For my project I chose to make a Pizza Delivery application that would allow the user to enter their details and order a pizza. There are 2 SQL tables one of them contains the Stock, the purpose of this table is to match the entered PizzaID and display the name of that pizza. The other table is the Orders table, the purpose of this table is to take in the customers details and what pizza number they would like, to then display their order on the home page.
 
 
 ## Project Tracking
-To track the development of my progress I used a Kanban Trello Board, using this helped me track each stage of my project and see which sections i had completed or still needed working on improving my overall efficiency and not spending time trying to workout where I left off yesterday.  
+To track the development of my progress I used a Kanban Trello Board, using this helped me track each stage of my project and see which sections i had completed or still needed working on, improving my overall efficiency and not spending time trying to workout where I left off yesterday.  
 In the Trello Board I added a section for user storys under project tracking these were requested for the project, I then broke them down and turned them into tasks for my board that could be completed.
 #### Before Completion
 ![](Documents/TrelloBoard.PNG)
@@ -58,7 +58,7 @@ Once my project had been completed I went over risk assesment and added an updat
 ## Design
 Shown below is each page of my website given more time I would like to focus more on the styling and layout of the website.
 ### Home Page
-Shown below is my home page this page is setup to display placed orders with entered information. It also allows the delivery status to be updated and the order to be deleted.  
+Shown below is my home page this page is setup to display placed orders with entered information. It also allows the delivery status to be updated and the order to be deleted from the sql table, which meets the update and delete functionality for CRUD.
 ![](Documents/Home.PNG)
 ### Stock Page
 This page allows the user to add new pizza to the menu page and automatically have a menu item number assigned
